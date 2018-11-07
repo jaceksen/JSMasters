@@ -1,0 +1,12 @@
+Plan działania
+
+1. JavaScript
+
+2. TypeScript
+
+3. Angular - środowisko programistyczne
+3a. Ionic - Andrioid, Apple
+
+4. Bazy danych - Firestore (NoSQL), MongoDB (NoSQL), ... inne SLQowe (Oracle, MySQL)
+
+5. Bootstrap, Materialize - frontend - aby było pięknie

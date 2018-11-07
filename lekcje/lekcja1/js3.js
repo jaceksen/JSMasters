@@ -1,0 +1,1 @@
+console.log('Wpis nr 3');
