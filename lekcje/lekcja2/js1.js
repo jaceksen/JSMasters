@@ -30,7 +30,7 @@ console.log(typeof jakasZmienna2);
 
 var kolejnaFunkcja = function() {
     console.log('tralalla');
-}
+};
 
 kolejnaFunkcja();
 
