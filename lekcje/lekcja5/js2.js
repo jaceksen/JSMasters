@@ -27,3 +27,35 @@ console.log('---------------');
 
 var arrRev = arr1.reverse();
 console.log(arrRev);
+
+console.log('concat - łączenie tablic');
+arr1 = [1,2,3,4,5];
+arr2 = ['trlalala','bbbb'];
+
+var conArr = arr1.concat(arr2);
+console.log(arr1);
+console.log(arr2);
+console.log(conArr);
+
+
+// join - tworzy string i określa jaki ma być separator
+console.log('join');
+array = [1,2,3,4,5];
+var joinArray = array.join(' | ');
+console.log(array);
+console.log(joinArray);
+
+
+// reduce - bierze dwa argumenty total i value
+// redukuje array to jednej wartości
+console.log('reduce');
+
+array = [1,2,3,4];
+console.log(array);
+var redArray = array.reduce((total, value) => {
+    console.log('tot: ', total);
+    console.log('val: ', value);
+    return total + value;
+});
+console.log(array);
+console.log(redArray);
