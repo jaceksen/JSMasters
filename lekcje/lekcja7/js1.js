@@ -29,8 +29,10 @@ function Samochod() {}
 
 var samochod = new Samochod();
 
-samochod.marka = 'fiat';
-samochod.kola = 4;
+console.log(samochod);
+
+// samochod.marka = 'fiat';
+// samochod.kola = 4;
 
 console.log(samochod);
 
