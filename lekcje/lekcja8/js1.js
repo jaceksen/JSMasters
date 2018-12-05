@@ -49,9 +49,13 @@ kolejny.greet();
 function Person3(imie, wiek) {
     this.imie = imie;
     this.wiek = wiek;
+    // console.log(this.imie, this.wiek);
 }
+console.log('=========================');
+// Person3('Tigo',33);
 
 jacek = new Person3('Jacek', 46);
+console.log(jacek);
 
 console.log(jacek.wiek);
 
@@ -67,7 +71,7 @@ var tab1 = [];
 for(let i=1; i<=10; i++) {
     console.log(i);
     // jacek = new Person3('jacek', i);
-    tab1.push(new Person3('Jacek',i));
+    tab1.push(new Person3('Jacek'.concat(' nr ' + i),i*10));
 }
 
 console.log(tab1);
