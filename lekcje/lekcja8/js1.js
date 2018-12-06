@@ -67,7 +67,7 @@ var tab1 = [];
 for(let i=1; i<=10; i++) {
     console.log(i);
     // jacek = new Person3('jacek', i);
-    tab1.push(new Person3('Jacek',i));
+    tab1.push(new Person3('Jacek'.concat(' numer ' + i +'.'), i*10));
 }
 
 console.log(tab1);
