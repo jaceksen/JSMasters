@@ -104,6 +104,21 @@ console.log(d.split(' '));
 var e = '  dsfsda  f   ';
 console.log(e.trim()); 
 
+//Math
+var pi = Math.PI;
+console.log(pi);
+var e = Math.E;
+
+a = 1.27;
+console.log(Math.floor(a), Math.ceil(a), Math.round(a));
+
+console.log(Math.max(1,44,5,22));
+
+console.log(Math.random());
+var rnd = Math.floor(Math.random() * 100) + 1;
+console.log(rnd);
+
+
 
 
 
