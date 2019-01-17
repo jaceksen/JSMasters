@@ -1,0 +1,3 @@
+if (http.readyState === XMLHttpRequest.DONE && http.status !== 200)
+
+http.readyState === XMLHttpRequest.DONE &&
