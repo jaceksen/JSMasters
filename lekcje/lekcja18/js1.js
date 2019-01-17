@@ -18,4 +18,26 @@ function searchWeather() {
 
     http.open(method, url);
 
+    http.onreadystatechange = () => {
+        // console.log(http.status);
+        // console.log(http.readyState);
+        if(http.readyState === XMLHttpRequest.DONE && http.status === 200) {
+            let data = JSON.parse(http.responseText);
+            console.log(data);
+            let weatherData = new Weather(cityName, data.weather[0].description.toUpperCase(), data.sys.country);
+
+            weatherData.temperature = data.min.temp;
+
+            updateWeather(weatherData);
+
+        } else if (http.readyState === XMLHttpRequest.DONE && http.status !== 200){
+            loadingText.style.display = 'none';
+            weatherBox.style.display = 'none';
+            searchCity.value = '';
+            alert('Nie mogłem pobrać danych');
+        }
+    };
+
+    http.send();
+
 }   
