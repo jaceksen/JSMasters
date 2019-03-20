@@ -10,7 +10,7 @@ Object.defineProperty(Weather.prototype, 'temperature', {
         return this._temperature;
     },
     set: function(value) {
-        this._temperature = (value * 1.8 + 32).toFixed(2) + 'F.';
-        // this._temperature = value;
+        // this._temperature = (value * 1.8 + 32).toFixed(2) + 'F.';
+        this._temperature = value;
     }
 });

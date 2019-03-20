@@ -26,7 +26,7 @@ function searchWeather() {
             console.log(data);
             let weatherData = new Weather(cityName, data.weather[0].description.toUpperCase(), data.sys.country);
 
-            weatherData.temperature = data.min.temp;
+            weatherData.temperature = data.main.temp;
 
             updateWeather(weatherData);
 
@@ -39,5 +39,16 @@ function searchWeather() {
     };
 
     http.send();
-
 }   
+
+function updateWeather(weatherData) {
+    weatherCity.textContent = weatherData.cityName + ' (' + weatherData.country + ')';
+    weatherDescription.textContent = weatherData.description;
+    weatherTemperature.textContent = weatherData.temperature;
+    // console.log(weatherTemperature);
+    weatherTemperature.insertAdjacentHTML('beforeend', '&#8451;');
+    kraj.textContent = weatherData.country;
+    searchCity.value = '';
+    loadingText.style.display = 'none';
+    weatherBox.style.display = 'block';
+}

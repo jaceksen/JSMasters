@@ -5,4 +5,4 @@ let weatherBox = document.querySelector('#weather');
 let kraj = document.querySelector('#kraj');
 let weatherCity = weatherBox.firstElementChild;
 let weatherDescription = document.querySelector('#weatherDescription');
-let weatherTemperature = weatherBox.lastChild;
+let weatherTemperature = document.querySelector('#weatherTemperature');
