@@ -63,7 +63,7 @@ console.log(fn6(22));
 // --- arrow functions and THIS -----
 
 function fu1() {
-    console.log(this);
+    console.log('this::', this);
 }
 
 let buttons = document.querySelectorAll('button');
