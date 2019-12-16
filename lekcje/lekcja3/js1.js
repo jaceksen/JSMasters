@@ -1,41 +1,46 @@
-// var condition = true;
+var condition = true;
 
-// if(condition) {
-//     console.log('dzialam');
-// } else {
-//     console.log('nie dzialam');
-// }
+if(condition) {
+    console.log('dzialam');
+} else {
+    console.log('nie dzialam');
+}
+// dzialam
 
-// var condition2 = 2;
+var condition2 = 2;
 
-// if(condition2) {
-//     console.log('dzialam 2');
-// } else {
-//     console.log('nie dzialam 2');
-// }
+if(condition2) {
+    console.log('dzialam 2');
+} else {
+    console.log('nie dzialam 2');
+}
+// dzialam2
 
-// console.log(1 == true);
-// console.log(1 === true);
-// console.log(2 == true);
+console.log(1 == true);
+// true
+console.log(1 === true);
+// false
+console.log(2 == true);
+// false
 
 // ************** switch 
 
-// var numer = 125;
+var numer = 125;
 
-// switch(numer) {
-//     case 1: 
-//         console.log('jeden');
-//         break;
-//     case 5:
-//         console.log('pięć');
-//         break;
-//     case 125:
-//         console.log('tttt');
-//         break;
-//     default:
-//         console.log('default');
-//         break;
-// }
+switch(numer) {
+    case 1: 
+        console.log('jeden');
+        break;
+    case 5:
+        console.log('pięć');
+        break;
+    case 125:
+        console.log('tttt');
+        break;
+    default:
+        console.log('default');
+        break;
+}
 
 // *********** loop
 
@@ -52,22 +57,23 @@
 //     }
 // }
 
-// for(let i = 0; i < 7; i++) {
-//     if(i === 3) {
-//         continue;
-//     }
-//     console.log('i = ' + i);
-// }
+for(let i = 0; i < 7; i++) {
+    if(i === 3) {
+        continue;
+    }
+    console.log('i = ' + i);
+}
+// bez i=3
 
-// for(let  i=0; i < 5; i++) {
-//     for(let j=0; j < 2; j++) {
-//         if(i === 1) {
-//             break;
-//         }
-//         console.log('j = ' + j);
-//     }
-//     console.log('i = ' + i);
-// }
+for(let  i=0; i < 5; i++) {
+    for(let j=0; j < 2; j++) {
+        if(i === 2) {
+            break;
+        }
+        console.log('j1 = ' + j + ' ' + i);
+    }
+    console.log('i22 = ' + i);
+}
 
 // var tab = [1, 2, 3, 10, '333', 'napis'];
 
