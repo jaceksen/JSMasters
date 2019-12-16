@@ -28,6 +28,8 @@ try {
     console.log('Const jest const');
 }
 
+// https://www.geeksforgeeks.org/ways-iterating-array-javascript/
+
 const bb = [1,2,3,4];
 bb.push(5);
 console.log(bb);
